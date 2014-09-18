@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="uk.ac.edina.mobile.iosbackgroundlocation" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>iOS Background Location</name>
+    <platform name="ios">
+         <!--this need to be added to the .plist file-->
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>location</string>
+            </array>
+        </config-file>
+    </platform>
+</plugin>
